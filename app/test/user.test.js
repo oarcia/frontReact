@@ -58,7 +58,7 @@ describe("User Login Should work correctly", () =>{
             last_name:"test",
             email:"gmail@gmail.com",
             password:"pokemon3001"
-            //profile_image:""
+
         };
         await actions.createUser(data);
         const res = await graphql(schema, mutationLogin, null, {},
