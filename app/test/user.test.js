@@ -16,16 +16,16 @@ const mutationRegister = `
 describe("User singup works correctly",()=>{
     beforeEach(async() => await setupTest());
     //afterEach
-    it("Should create user correctly ", async()=>{
-        const data ={
-            first_name:"Test",
-            last_name:"test",
-            email:"test14@gmail.com",
-            password:"pokemon24321"
-            //profile_image:""
-        }
-        const res = await graphql(schema, mutationRegister, null,{},{data})
-        expect(res.data.signup).toHaveProperty("token")
+//    it("Should create user correctly ", async()=>{
+//        const data ={
+//            first_name:"Test",
+//            last_name:"test",
+//            email:"test14@gmail.com",
+//            password:"pokemon24321"
+//            //profile_image:""
+//        }
+//        const res = await graphql(schema, mutationRegister, null,{},{data})
+//        expect(res.data.signup).toHaveProperty("token")
     })
     it("should not create user", async()=>{
         const data = {
@@ -40,7 +40,7 @@ describe("User singup works correctly",()=>{
         const res = await graphql(schema,mutationRegister,null,{},{data})
         expect(res).toHaveProperty("errors")
     })
-})
+//})
 
 const mutationLogin = `
         mutation LogUser($email:String!, $password:String!){
@@ -68,14 +68,14 @@ describe("User Login Should work correctly", () =>{
             })
         expect(res.data.login).toHaveProperty("token");
     })
-    it("should not login correctly", async () =>{
-        const data = {
-            first_name:"Test",
-            last_name: "test",
-             email: "test14@gmail.com",
-             password: "pokemon24321"
-            //profile_image:""
-        }
+//    it("should not login correctly", async () =>{
+//        const data = {
+//            first_name:"Test",
+//            last_name: "test",
+//             email: "test14@gmail.com",
+//             password: "pokemon24321"
+//            //profile_image:""
+//        }
     await actions.createUser(data);
     const res  =await graphql(schema,mutationLogin,null,{},
         {
@@ -84,4 +84,4 @@ describe("User Login Should work correctly", () =>{
         })
     expect(res).toHaveProperty("errors");
     })
-})
+//})
