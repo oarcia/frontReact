@@ -4,7 +4,7 @@
   "description": "Este es el backend del batch 28",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "jest --detectOpenHandles --forceExit",
     "start": "nodemon app/app.js",
     "watch": "nodemon -e js,graphql --exec 'npm run lint && npm start'",
     "lint": "eslint app/"

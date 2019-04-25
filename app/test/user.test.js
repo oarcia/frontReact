@@ -20,8 +20,8 @@ describe("User singup works correctly",()=>{
         const data ={
             first_name:"Test",
             last_name:"test",
-            email:"test1@gmail.com",
-            password:"pokemon2432"
+            email:"test14@gmail.com",
+            password:"pokemon24321"
             //profile_image:""
         }
         const res = await graphql(schema, mutationRegister, null,{},{data})
@@ -72,7 +72,7 @@ describe("User Login Should work correctly", () =>{
         const data = {
             first_name:"Test",
             last_name: "test",
-             email: "test11@gmail.com",
+             email: "test14@gmail.com",
              password: "pokemon24321"
             //profile_image:""
         }
