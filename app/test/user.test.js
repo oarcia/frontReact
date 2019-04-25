@@ -20,8 +20,8 @@ describe("User singup works correctly",()=>{
         const data ={
             first_name:"Test",
             last_name:"test",
-            email:"test@gmail.com",
-            password:"pokemon243"
+            email:"test1@gmail.com",
+            password:"pokemon2432"
             //profile_image:""
         }
         const res = await graphql(schema, mutationRegister, null,{},{data})
@@ -31,8 +31,8 @@ describe("User singup works correctly",()=>{
         const data = {
             first_name:"Test",
             last_name: "test",
-            email: "test@gmail.com",
-            password: "pokemon243"
+            email: "test11@gmail.com",
+            password: "pokemon24321"
             //profile_image: ""
 
         };
@@ -56,8 +56,8 @@ describe("User Login Should work correctly", () =>{
         const data = {
             first_name:"Test",
             last_name:"test",
-            email:"test2@gmail.com",
-            password:"pokemon300"
+            email:"gmail@gmail.com",
+            password:"pokemon3001"
             //profile_image:""
         };
         await actions.createUser(data);
@@ -72,8 +72,8 @@ describe("User Login Should work correctly", () =>{
         const data = {
             first_name:"Test",
             last_name: "test",
-             email: "test1@gmail.com",
-             password: "pokemon300"
+             email: "test11@gmail.com",
+             password: "pokemon24321"
             //profile_image:""
         }
     await actions.createUser(data);
