@@ -1,0 +1,34 @@
+{
+  "name": "batch28-backend",
+  "version": "1.0.0",
+  "description": "Este es el backend del batch 28",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "start": "nodemon app/app.js",
+    "watch": "nodemon -e js,graphql --exec 'npm run lint && npm start'",
+    "lint": "eslint app/"
+  },
+  "engine": {
+    "node": ">=8.3.0"
+  },
+  "author": "Gerardo Arjona",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "cloudinary": "^1.13.2",
+    "dotenv": "^7.0.0",
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.4",
+    "jest": "^24.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.19",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-security": "^1.4.0"
+  }
+}
