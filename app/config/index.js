@@ -2,16 +2,16 @@ const NODE_ENV = process.env.NODE_ENV || "dev";
 
 const ENVS = {
     dev:{
-        SECRET_KEY:"UJUIJOKOPKMNXXXXJKJ",
+        SECRET_KEY:"",
         db:{
-            url: "mongodb+srv://usuario:hola12345@cluster0-zg4pg.mongodb.net/test?retryWrites=true"
+            url: ""
         }
     },
     
     test:{
-        SECRET_KEY: "UJUIJOKOEPKMNXXXXJKJ",
+        SECRET_KEY: "",
         db:{
-        url: "mongodb+srv://usuario:hola12345@cluster0-zg4pg.mongodb.net/testeo?retryWrites=true"
+        url: ""
         }
     },
     production:{
