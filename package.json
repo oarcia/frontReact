@@ -15,7 +15,7 @@
   "author": "Gerardo Arjona",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.5",
+    "bcrypt": "^5.0.0",
     "cloudinary": "^1.13.2",
     "dotenv": "^7.0.0",
     "graphql-import": "^0.7.1",
